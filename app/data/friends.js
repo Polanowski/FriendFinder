@@ -17,7 +17,7 @@ var friends = [
     },
 
     {
-        name: "Sean Combs",
+        name: "Steve Rogers",
         photo: "",
         scores: [
             "",
@@ -65,7 +65,76 @@ var friends = [
             "",
             ""
         ]
+    },
+
+    {
+        name: "Tony Stark",
+        photo: "",
+        scores: [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ]
+    },
+
+    {
+        name: "Bruce Wayne",
+        photo: "",
+        scores: [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ]
+    },
+
+    {
+        name: "Diana Prince",
+        photo: "",
+        scores: [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ]
+    },
+
+    {
+        name: "Ororo Munroe",
+        photo: "",
+        scores: [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ]
     }
+
 ];
 
 module.exports = friends;

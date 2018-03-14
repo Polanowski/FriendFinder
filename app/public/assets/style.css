@@ -1,0 +1,13 @@
+/*Background styles*/
+body {
+    background: url(././background.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+/*Form Settings*/
+.red {
+    color: red;
+    font-size: 14px
+}

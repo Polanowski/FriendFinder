@@ -3,8 +3,9 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Friend Finder</title>
+    <title>Super Friend Finder Survey</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="./assets/style.css">
     <!-- Bootstrap 4 Links-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -12,145 +13,169 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </head>
 <body>
-    <nav class="nav">
-        <a class="nav-link" href="#">Home</a>
-        <a class="nav-link active" href="#">Survey</a>
-    </nav>
-    <div class="Container">
-        <h1 class="display-4">Survey Questions</h1>
-        <hr>
+    <div class="container nav">
+        <nav class="nav">
+            <a class="nav-link" href="/home.html">Home</a>
+            <a class="nav-link active" href="/survey">Survey</a>
+        </nav>
+    </div>
+    <div class="container">
+        <div class="jumbotron">
+            <h1 class="display-4">Survey Questions</h1>
+            <hr>
+        </div>
+        <div class="card">
+            <div class="card-body">
+                <h3>About You</h3>
+                <h4>Name <em class="red">Required</em></h4>
+                <input type="text" name="" id="name" class="form-control" required>
 
-        <h3>About You</h3>
-        <h4>Name <em class="red">Required</em></h4>
-        <input type="text" name="" id="name" class="form-control" required>
+                <h4>Photo Link <em class="red">Required</em></h4>
+                <input type="text" name="" id="name" class="form-control" required>
+                <hr>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-body">
+                <h3 class="card-title">Questions 1</h3>
+                <h4>Flying is the best.</h4>
+                <select data-placeholder="" class="chosen-select" id="q1">
+                    <option value=""></option>
+                    <option value="1">1 <em>Strongly Disagree</em></option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 <em>Strongly Agree</em></option>
+                </select>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-body">
+                <h3 class="card-title">Questions 2</h3>
+                <h4>Do you feel angry?</h4>
+                <select data-placeholder="" class="chosen-select" id="q1">
+                    <option value=""></option>
+                    <option value="1">1 <em>Strongly Disagree</em></option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 <em>Strongly Agree</em></option>
+                </select>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-body">
+                <h3 class="card-title">Questions 3</h3>
+                <h4>Do you abide by the rules?</h4>
+                <select data-placeholder="" class="chosen-select" id="q1">
+                    <option value=""></option>
+                    <option value="1">1 <em>Strongly Disagree</em></option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 <em>Strongly Agree</em></option>
+                </select>
+            </div>
+        </div>  <div class="card">
+            <div class="card-body">
+                <h3 class="card-title">Questions 4</h3>
+                <h4>Brains over power.</h4>
+                <select data-placeholder="" class="chosen-select" id="q1">
+                    <option value=""></option>
+                    <option value="1">1 <em>Strongly Disagree</em></option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 <em>Strongly Agree</em></option>
+                </select>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-body">
+                <h3 class="card-title">Questions 5</h3>
+                <h4>Parties are everything</h4>
+                <select data-placeholder="" class="chosen-select" id="q1">
+                    <option value=""></option>
+                    <option value="1">1 <em>Strongly Disagree</em></option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 <em>Strongly Agree</em></option>
+                </select>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-body">
+                <h3 class="card-title">Questions 6</h3>
+                <h4>Journalist are above average.</h4>
+                <select data-placeholder="" class="chosen-select" id="q1">
+                    <option value=""></option>
+                    <option value="1">1 <em>Strongly Disagree</em></option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 <em>Strongly Agree</em></option>
+                </select>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-body">
+                <h3 class="card-title">Questions 7</h3>
+                <h4>Friends first.</h4>
+                <select data-placeholder="" class="chosen-select" id="q1">
+                    <option value=""></option>
+                    <option value="1">1 <em>Strongly Disagree</em></option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 <em>Strongly Agree</em></option>
+                </select>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-body">
+                <h3 class="card-title">Questions 8</h3>
+                <h4>Monogamy is the way to go.</h4>
+                <select data-placeholder="" class="chosen-select" id="q1">
+                    <option value=""></option>
+                    <option value="1">1 <em>Strongly Disagree</em></option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 <em>Strongly Agree</em></option>
+                </select>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-body">
+                <h3 class="card-title">Questions 9</h3>
+                <h4>Shoot first questions later.</h4>
+                <select data-placeholder="" class="chosen-select" id="q1">
+                    <option value=""></option>
+                    <option value="1">1 <em>Strongly Disagree</em></option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 <em>Strongly Agree</em></option>
+                </select>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-body">
+                <h3 class="card-title">Questions 10</h3>
+                <h4>Capes are a must.</h4>
+                <select data-placeholder="" class="chosen-select" id="q1">
+                    <option value=""></option>
+                    <option value="1">1 <em>Strongly Disagree</em></option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 <em>Strongly Agree</em></option>
+                </select>
+            </div>
+        </div>
 
-        <h4>Photo Link <em class="red">Required</em></h4>
-        <input type="text" name="" id="name" class="form-control" required>
-        <hr>
-
-        <h3>Questions 1</h3>
-        <h4>Placeholder</h4>
-        <select data-placeholder="" class="chosen-select" id="q1">
-            <option value=""></option>
-            <option value="1">1 <em>Strongly Disagree</em></option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5 <em>Strongly Agree</em></option>
-        </select>
-
-        <h3>Questions 1</h3>
-        <h4>Placeholder</h4>
-        <select data-placeholder="" class="chosen-select" id="q1">
-            <option value=""></option>
-            <option value="1">1 <em>Strongly Disagree</em></option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5 <em>Strongly Agree</em></option>
-        </select>
-
-        <h3>Questions 2</h3>
-        <h4>Placeholder</h4>
-        <select data-placeholder="" class="chosen-select" id="q1">
-            <option value=""></option>
-            <option value="1">1 <em>Strongly Disagree</em></option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5 <em>Strongly Agree</em></option>
-        </select>
-
-        <h3>Questions 3</h3>
-        <h4>Placeholder</h4>
-        <select data-placeholder="" class="chosen-select" id="q1">
-            <option value=""></option>
-            <option value="1">1 <em>Strongly Disagree</em></option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5 <em>Strongly Agree</em></option>
-        </select>
-
-        <h3>Questions 4</h3>
-        <h4>Placeholder</h4>
-        <select data-placeholder="" class="chosen-select" id="q1">
-            <option value=""></option>
-            <option value="1">1 <em>Strongly Disagree</em></option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5 <em>Strongly Agree</em></option>
-        </select>
-
-        <h3>Questions 5</h3>
-        <h4>Placeholder</h4>
-        <select data-placeholder="" class="chosen-select" id="q1">
-            <option value=""></option>
-            <option value="1">1 <em>Strongly Disagree</em></option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5 <em>Strongly Agree</em></option>
-        </select>
-
-        <h3>Questions 6</h3>
-        <h4>Placeholder</h4>
-        <select data-placeholder="" class="chosen-select" id="q1">
-            <option value=""></option>
-            <option value="1">1 <em>Strongly Disagree</em></option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5 <em>Strongly Agree</em></option>
-        </select>
-
-        <h3>Questions 7</h3>
-        <h4>Placeholder</h4>
-        <select data-placeholder="" class="chosen-select" id="q1">
-            <option value=""></option>
-            <option value="1">1 <em>Strongly Disagree</em></option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5 <em>Strongly Agree</em></option>
-        </select>
-
-        <h3>Questions 8</h3>
-        <h4>Placeholder</h4>
-        <select data-placeholder="" class="chosen-select" id="q1">
-            <option value=""></option>
-            <option value="1">1 <em>Strongly Disagree</em></option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5 <em>Strongly Agree</em></option>
-        </select>
-
-        <h3>Questions 9</h3>
-        <h4>Placeholder</h4>
-        <select data-placeholder="" class="chosen-select" id="q1">
-            <option value=""></option>
-            <option value="1">1 <em>Strongly Disagree</em></option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5 <em>Strongly Agree</em></option>
-        </select>
-
-        <h3>Questions 10</h3>
-        <h4>Placeholder</h4>
-        <select data-placeholder="" class="chosen-select" id="q1">
-            <option value=""></option>
-            <option value="1">1 <em>Strongly Disagree</em></option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5 <em>Strongly Agree</em></option>
-        </select>
-
-        <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit">Submit</button>
-
+            <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit">Submit</button>
     </div>
     <footer>
         <div class="container">

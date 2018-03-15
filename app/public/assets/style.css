@@ -11,3 +11,8 @@ body {
     color: red;
     font-size: 14px
 }
+
+/*Footer setting*/
+footer p, footer p a{
+    color: #fff;
+}

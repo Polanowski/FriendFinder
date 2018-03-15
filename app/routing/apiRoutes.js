@@ -34,10 +34,20 @@ module.exports = function(app){
                 totalDifference += Math.abs(parseInt(userScores[j])- parseInt(friends[i].scores[j]));
 
                 if (totalDifference <= bestMatch.friendDifference){
-                    
+                   //Reset the bestMatch to be the new friend.
+                   bestMatch.name = friends[i].name;
+                   bestMatch.photo = friends[i].photo;
+                   bestMatch.friendDifference = totalDifference;
                 }
             }
         }
+
+        //Finally save the user's data to the database. 
+        //This has to happen after the check otherwise the database will always return that the user is the user's best friend.
+        friends.push(userData);
+
+        //Return the JSON with the user's bestMatch. This will be used by the HTML in the next page
+        res.json(bestMatch);
 
     });
 }

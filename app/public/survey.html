@@ -11,6 +11,10 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- Choosen -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>
+
 </head>
 <body>
     <div class="container nav">
@@ -53,7 +57,7 @@
             <div class="card-body">
                 <h3 class="card-title">Questions 2</h3>
                 <h4>Do you feel angry?</h4>
-                <select data-placeholder="" class="chosen-select" id="q1">
+                <select data-placeholder="" class="chosen-select" id="q2">
                     <option value=""></option>
                     <option value="1">1 <em>Strongly Disagree</em></option>
                     <option value="2">2</option>
@@ -67,7 +71,7 @@
             <div class="card-body">
                 <h3 class="card-title">Questions 3</h3>
                 <h4>Do you abide by the rules?</h4>
-                <select data-placeholder="" class="chosen-select" id="q1">
+                <select data-placeholder="" class="chosen-select" id="q3">
                     <option value=""></option>
                     <option value="1">1 <em>Strongly Disagree</em></option>
                     <option value="2">2</option>
@@ -80,7 +84,7 @@
             <div class="card-body">
                 <h3 class="card-title">Questions 4</h3>
                 <h4>Brains over power.</h4>
-                <select data-placeholder="" class="chosen-select" id="q1">
+                <select data-placeholder="" class="chosen-select" id="q4">
                     <option value=""></option>
                     <option value="1">1 <em>Strongly Disagree</em></option>
                     <option value="2">2</option>
@@ -94,7 +98,7 @@
             <div class="card-body">
                 <h3 class="card-title">Questions 5</h3>
                 <h4>Parties are everything</h4>
-                <select data-placeholder="" class="chosen-select" id="q1">
+                <select data-placeholder="" class="chosen-select" id="q5">
                     <option value=""></option>
                     <option value="1">1 <em>Strongly Disagree</em></option>
                     <option value="2">2</option>
@@ -108,7 +112,7 @@
             <div class="card-body">
                 <h3 class="card-title">Questions 6</h3>
                 <h4>Journalist are above average.</h4>
-                <select data-placeholder="" class="chosen-select" id="q1">
+                <select data-placeholder="" class="chosen-select" id="q6">
                     <option value=""></option>
                     <option value="1">1 <em>Strongly Disagree</em></option>
                     <option value="2">2</option>
@@ -122,7 +126,7 @@
             <div class="card-body">
                 <h3 class="card-title">Questions 7</h3>
                 <h4>Friends first.</h4>
-                <select data-placeholder="" class="chosen-select" id="q1">
+                <select data-placeholder="" class="chosen-select" id="q7">
                     <option value=""></option>
                     <option value="1">1 <em>Strongly Disagree</em></option>
                     <option value="2">2</option>
@@ -136,7 +140,7 @@
             <div class="card-body">
                 <h3 class="card-title">Questions 8</h3>
                 <h4>Monogamy is the way to go.</h4>
-                <select data-placeholder="" class="chosen-select" id="q1">
+                <select data-placeholder="" class="chosen-select" id="q8">
                     <option value=""></option>
                     <option value="1">1 <em>Strongly Disagree</em></option>
                     <option value="2">2</option>
@@ -150,7 +154,7 @@
             <div class="card-body">
                 <h3 class="card-title">Questions 9</h3>
                 <h4>Shoot first questions later.</h4>
-                <select data-placeholder="" class="chosen-select" id="q1">
+                <select data-placeholder="" class="chosen-select" id="q9">
                     <option value=""></option>
                     <option value="1">1 <em>Strongly Disagree</em></option>
                     <option value="2">2</option>
@@ -164,7 +168,7 @@
             <div class="card-body">
                 <h3 class="card-title">Questions 10</h3>
                 <h4>Capes are a must.</h4>
-                <select data-placeholder="" class="chosen-select" id="q1">
+                <select data-placeholder="" class="chosen-select" id="q10">
                     <option value=""></option>
                     <option value="1">1 <em>Strongly Disagree</em></option>
                     <option value="2">2</option>
@@ -179,8 +183,79 @@
     </div>
     <footer>
         <div class="container">
-            <p>&copy; Copyright 2017 Anthony Polanowski<a href="">Friend Finder</a></p>
+            <p>&copy; Copyright 2017 Anthony Polanowski <a href="">Super Friend Finder</a></p>
         </div>
     </footer>
+
+    <!--Modal -->
+    <div class="resultsModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h2 class="modal-title">Best Match</h2>
+                </div>
+                <div class="modal-body">
+                    <h2 id="matchName"></h2>
+                    <img id="matchImg" src="" alt="">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>                
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        $("#submit").on("click", function(){
+
+            //Form Validation
+            function validateForm(){
+                var isValid = true;
+                $(".form-control").each(function(){
+                    if ($(this).val() === ""){
+                        isValid = false;
+                    }
+                });
+                return isValid;
+            }
+
+            //if all required fields are filled 
+            if(validateForm()) {
+                //Create an object for the user's data
+                var userData = {
+                    name: $("#name").val(),
+                    photo: $("#photo").val(),
+                    scores: [
+                        $("#q1").val(),
+                        $("#q2").val(),
+                        $("#q3").val(),
+                        $("#q4").val(),
+                        $("#q5").val(),
+                        $("#q6").val(),
+                        $("#q7").val(),
+                        $("#q8").val(),
+                        $("#q9").val(),
+                        $("#q10").val()
+                    ]
+                };
+
+                //Grab url of the website
+                var currentURL = window.location.origin;
+
+                //Ajax post the data to the friends API.
+                $.post(currentURL + "/api/friends", userData, function(data){
+
+                    //Grab the result from AJAX
+                    $("#matchName").text(data.name);
+                    $("#matchImg").attr("src", data.photo);
+
+                    //Best match in modal
+                    $("#resultsModal").modal("toggle");
+                    alert("working");
+                });
+            }
+        });
+    </script>
 </body>
 </html>

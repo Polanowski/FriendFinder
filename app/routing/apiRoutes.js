@@ -12,16 +12,9 @@ module.exports = function(app){
             friendDifference: 1000
         };
 
-        console.log(req.body);
-        
-        //Here we take the result of teh user's survey POST and parse it.
+        //Here we take the result of the user's survey POST and parse it.
         var userData = req.body;
         var userScores = userData.scores;
-
-        console.log(userScores); //This is the issue, we don't know whaqt this is.
-
-        //This variable will calculate the diffeerence between the user's score
-        //and the score of each user in the database
         var totalDifference = 0;
 
         //Loop through all possibilities in the database.

@@ -1,6 +1,6 @@
 /*Background styles*/
 body {
-    background: url(././background.jpg);
+    background: url(./assets/background.jpg);
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;

@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Super Friend Finder Survey</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" type="text/css" href="./assets/style.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
     <!-- Bootstrap 4 Links-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -14,12 +14,31 @@
     <!-- Choosen -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>
-
+    <style>
+        /*Background styles*/
+    body {
+        background: url(background.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+    }
+    
+    /*Form Settings*/
+    .red {
+        color: red;
+        font-size: 14px
+    }
+    
+    /*Footer setting*/
+    footer p, footer p a{
+        color: #fff;
+    }
+    </style>
 </head>
 <body>
     <div class="container nav">
         <nav class="nav">
-            <a class="nav-link" href="/home">Home</a>
+            <a class="nav-link" href="/">Home</a>
             <a class="nav-link active" href="/survey">Survey</a>
         </nav>
     </div>
